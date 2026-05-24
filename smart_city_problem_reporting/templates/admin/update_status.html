@@ -1,0 +1,44 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<div class="container">
+
+<h2 class="mb-4">Update Complaint Status</h2>
+
+<div class="card shadow p-4">
+
+<form method="POST">
+
+<div class="mb-3">
+<label class="form-label">Select Status</label>
+<select name="status" class="form-control">
+
+<option value="Pending">Pending</option>
+<option value="In Progress">In Progress</option>
+<option value="Resolved">Resolved</option>
+
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Status Description</label>
+<textarea name="status_note" class="form-control" rows="4"
+placeholder="Enter update details (Example: Work started / Issue resolved / Team assigned)"></textarea>
+</div>
+
+<button class="btn btn-primary">
+Update Status
+</button>
+
+<a href="/admin/complaints" class="btn btn-secondary">
+Back
+</a>
+
+</form>
+
+</div>
+
+</div>
+
+{% endblock %}

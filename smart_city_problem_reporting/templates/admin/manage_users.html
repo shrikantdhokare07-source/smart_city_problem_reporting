@@ -1,0 +1,56 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+<h2>Manage Users</h2>
+
+<table class="table table-bordered table-striped mt-3">
+
+<thead class="table-dark">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for user in users %}
+
+<tr>
+
+<td>{{ user[0] }}</td>
+<td>{{ user[1] }}</td>
+<td>{{ user[2] }}</td>
+<td>{{ user[3] }}</td>
+
+<td>
+
+<a href="/admin/delete_user/{{ user[0] }}" 
+class="btn btn-danger btn-sm"
+onclick="return confirm('Are you sure you want to delete this user?')">
+
+Delete
+
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% endblock %}

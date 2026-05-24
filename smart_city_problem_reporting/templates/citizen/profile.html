@@ -1,0 +1,225 @@
+{% extends "citizen/base_citizen.html" %}
+
+{% block content %}
+
+<style>
+
+    body{
+        background: #f4f7fb;
+    }
+
+    .profile-title{
+        font-size: 32px;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .profile-subtitle{
+        color: #64748b;
+        margin-bottom: 30px;
+    }
+
+    .profile-card{
+        background: #ffffff;
+        border: none;
+        border-radius: 22px;
+        padding: 35px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .user-info-card{
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: white;
+        border-radius: 22px;
+        padding: 35px 25px;
+        box-shadow: 0 8px 25px rgba(37,99,235,0.25);
+    }
+
+    .profile-avatar{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .form-label{
+        font-weight: 600;
+        color: #334155;
+        margin-bottom: 8px;
+    }
+
+    .form-control{
+        border-radius: 14px;
+        padding: 12px 15px;
+        border: 1px solid #dbeafe;
+        transition: 0.3s ease;
+    }
+
+    .form-control:focus{
+        border-color: #2563eb;
+        box-shadow: 0 0 10px rgba(37,99,235,0.2);
+    }
+
+    .btn-update{
+        width: 100%;
+        border: none;
+        border-radius: 14px;
+        padding: 13px;
+        background: linear-gradient(135deg, #16a34a, #15803d);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .btn-update:hover{
+        transform: translateY(-2px);
+        background: linear-gradient(135deg, #15803d, #166534);
+    }
+
+    .info-item{
+        background: rgba(255,255,255,0.15);
+        padding: 12px 15px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    .info-item strong{
+        display: block;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    .info-item span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+</style>
+
+<div class="container py-5">
+
+    <div class="mb-4">
+
+        <h2 class="profile-title">
+            My Profile
+        </h2>
+
+        <p class="profile-subtitle">
+            Manage your personal information and account details.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Profile Form -->
+        <div class="col-lg-7">
+
+            <div class="profile-card">
+
+                <form method="POST">
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Full Name
+                        </label>
+
+                        <input type="text"
+                            name="name"
+                            class="form-control"
+                            value="{{ user[1] }}"
+                            placeholder="Enter your full name">
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Email Address
+                        </label>
+
+                        <input type="email"
+                            name="email"
+                            class="form-control"
+                            value="{{ user[2] }}"
+                            placeholder="Enter your email">
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+                            Phone Number
+                        </label>
+
+                        <input type="text"
+                            name="phone"
+                            class="form-control"
+                            value="{{ user[3] }}"
+                            placeholder="Enter phone number">
+
+                    </div>
+
+                    <button class="btn-update">
+
+                        Update Profile
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- User Info Card -->
+        <div class="col-lg-5">
+
+            <div class="user-info-card text-center">
+
+                <div class="profile-avatar">
+                    👤
+                </div>
+
+                <h3 class="mb-4">
+                    User Information
+                </h3>
+
+                <div class="info-item">
+                    <strong>User ID</strong>
+                    <span>{{ user[0] }}</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Name</strong>
+                    <span>{{ user[1] }}</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Email</strong>
+                    <span>{{ user[2] }}</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Phone</strong>
+                    <span>{{ user[3] }}</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

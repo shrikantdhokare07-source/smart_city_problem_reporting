@@ -1,0 +1,6 @@
+MYSQL_HOST = "localhost"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = ""
+MYSQL_DB = "smart_city"
+SECRET_KEY = "smart_city_secret"
+UPLOAD_FOLDER = "static/uploads"

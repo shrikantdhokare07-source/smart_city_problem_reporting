@@ -1,0 +1,85 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">Assign Department</h2>
+
+<div class="card p-4 shadow">
+
+<form method="POST">
+
+<div class="mb-3">
+
+<label>Complaint ID</label>
+<input type="text"
+class="form-control"
+value="{{ complaint[0] }}"
+readonly>
+
+</div>
+
+<div class="mb-3">
+
+<label>Problem Title</label>
+<input type="text"
+class="form-control"
+value="{{ complaint[1] }}"
+readonly>
+
+</div>
+
+<div class="mb-3">
+
+<label>Category</label>
+<input type="text"
+class="form-control"
+value="{{ complaint[2] }}"
+readonly>
+
+</div>
+
+<div class="mb-3">
+
+<label>Select Department</label>
+
+<select name="department" class="form-control" required>
+
+<option value="">Select Department</option>
+
+<option value="Sanitation Department">
+Sanitation Department
+</option>
+
+<option value="Road Department">
+Road Department
+</option>
+
+<option value="Water Supply Department">
+Water Supply Department
+</option>
+
+<option value="Electricity Board">
+Electricity Board
+</option>
+
+<option value="Municipal Department">
+Municipal Department
+</option>
+
+</select>
+
+</div>
+
+<button class="btn btn-success">
+Assign Department
+</button>
+
+<a href="/admin/complaints" class="btn btn-secondary">
+Back
+</a>
+
+</form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<h2>Complaint Details</h2>
+
+<div class="card p-4 shadow">
+
+<p><b>User:</b> {{ complaint[1] }}</p>
+<p><b>Category:</b> {{ complaint[2] }}</p>
+<p><b>Description:</b> {{ complaint[3] }}</p>
+<p><b>Status:</b> {{ complaint[4] }}</p>
+
+<a href="/admin/assign/{{complaint[0]}}" class="btn btn-success">
+Assign Department
+</a>
+<br>
+<a href="/admin/update/{{complaint[0]}}" class="btn btn-warning">
+Update Status
+</a>
+
+</div>
+
+{% endblock %}

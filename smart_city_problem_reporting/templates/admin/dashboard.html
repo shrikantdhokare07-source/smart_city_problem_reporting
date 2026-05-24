@@ -1,0 +1,176 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<div class="container">
+
+<h2 class="mb-4">
+<i class="fa-solid fa-gauge"></i> Admin Dashboard
+</h2>
+
+<!-- Statistics Cards -->
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="card text-white bg-primary shadow">
+
+<div class="card-body text-center">
+
+<h5>Total Complaints</h5>
+
+<h2>{{ total }}</h2>
+
+<i class="fa-solid fa-file-circle-exclamation fa-2x"></i>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card text-white bg-warning shadow">
+
+<div class="card-body text-center">
+
+<h5>Pending Complaints</h5>
+
+<h2>{{ pending }}</h2>
+
+<i class="fa-solid fa-clock fa-2x"></i>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card text-white bg-success shadow">
+
+<div class="card-body text-center">
+
+<h5>Resolved Complaints</h5>
+
+<h2>{{ resolved }}</h2>
+
+<i class="fa-solid fa-circle-check fa-2x"></i>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3">
+
+<div class="card text-white bg-danger shadow">
+
+<div class="card-body text-center">
+
+<h5>Departments</h5>
+
+<h2>{{ departments }}</h2>
+
+<i class="fa-solid fa-building fa-2x"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<hr class="mt-5">
+
+
+<!-- Quick Actions -->
+
+<h4 class="mb-3">Quick Actions</h4>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<a href="/admin/complaints" class="btn btn-primary w-100 mb-2">
+View Complaints
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="/admin/reports" class="btn btn-warning w-100 mb-2">
+System Reports
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="/admin/manage_users" class="btn btn-success w-100 mb-2">
+Manage Users
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="/admin/logout" class="btn btn-danger w-100 mb-2">
+Logout
+</a>
+
+</div>
+
+</div>
+
+<hr class="mt-5">
+
+
+<!-- Recent Complaints -->
+
+<h4 class="mt-5">Recent Complaints</h4>
+
+<table class="table table-striped mt-3">
+
+<tr>
+<th>ID</th>
+<th>Title</th>
+<th>Category</th>
+<th>Status</th>
+<th>Date</th>
+<th>Action</th>
+</tr>
+
+{% for c in recent_complaints %}
+
+<tr>
+<td>{{ c[0] }}</td>
+<td>{{ c[1] }}</td>
+<td>{{ c[2] }}</td>
+<td>{{ c[3] }}</td>
+<td>{{ c[4] }}</td>
+
+<td>
+<a href="/admin/complaint/{{c[0]}}" class="btn btn-sm btn-primary">
+View
+</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}

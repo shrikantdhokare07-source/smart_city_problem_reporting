@@ -1,0 +1,225 @@
+{% extends "citizen/base_citizen.html" %}
+
+{% block content %}
+
+<style>
+
+    body{
+        background: #f4f7fb;
+    }
+
+    .report-wrapper{
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .report-card{
+        background: white;
+        border-radius: 20px;
+        padding: 35px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        border: none;
+    }
+
+    .page-title{
+        font-size: 32px;
+        font-weight: 700;
+        color: #1e293b;
+    }
+
+    .page-subtitle{
+        color: #64748b;
+        margin-bottom: 30px;
+    }
+
+    .form-label{
+        font-weight: 600;
+        color: #334155;
+        margin-bottom: 8px;
+    }
+
+    .form-control,
+    .form-select{
+        border-radius: 12px;
+        padding: 12px 15px;
+        border: 1px solid #dbeafe;
+        transition: 0.3s ease;
+    }
+
+    .form-control:focus,
+    .form-select:focus{
+        border-color: #2563eb;
+        box-shadow: 0 0 10px rgba(37,99,235,0.2);
+    }
+
+    textarea{
+        resize: none;
+        min-height: 130px;
+    }
+
+    .upload-box{
+        border: 2px dashed #93c5fd;
+        border-radius: 15px;
+        padding: 20px;
+        background: #f8fbff;
+    }
+
+    .btn-submit{
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #16a34a, #15803d);
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .btn-submit:hover{
+        transform: translateY(-2px);
+        background: linear-gradient(135deg, #15803d, #166534);
+    }
+
+    .top-icon{
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: white;
+        font-size: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto 20px;
+        box-shadow: 0 5px 15px rgba(37,99,235,0.3);
+    }
+
+</style>
+
+<div class="container py-5">
+
+    <div class="report-wrapper">
+
+        <div class="report-card">
+
+            <div class="text-center">
+
+                <div class="top-icon">
+                    📝
+                </div>
+
+                <h2 class="page-title">
+                    Report a Problem
+                </h2>
+
+                <p class="page-subtitle">
+                    Help improve your city by reporting issues quickly.
+                </p>
+
+            </div>
+
+            <form method="POST" enctype="multipart/form-data">
+
+                <!-- Title -->
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Problem Title
+                    </label>
+
+                    <input type="text"
+                        name="title"
+                        class="form-control"
+                        placeholder="Enter complaint title"
+                        required>
+
+                </div>
+
+                <!-- Description -->
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Description
+                    </label>
+
+                    <textarea name="description"
+                        class="form-control"
+                        placeholder="Describe the issue in detail..."
+                        required></textarea>
+
+                </div>
+
+                <!-- Category -->
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Select Category
+                    </label>
+
+                    <select name="category"
+                        class="form-select"
+                        required>
+
+                        <option disabled selected>
+                            Choose Problem Category
+                        </option>
+
+                        <option>Garbage Issue</option>
+                        <option>Road Damage</option>
+                        <option>Water Leakage</option>
+                        <option>Electricity Issue</option>
+                        <option>Street Light Problem</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Location -->
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        Location
+                    </label>
+
+                    <input type="text"
+                        name="location"
+                        class="form-control"
+                        placeholder="Enter issue location"
+                        required>
+
+                </div>
+
+                <!-- Upload -->
+                <div class="mb-4">
+
+                    <label class="form-label">
+                        Upload Image
+                    </label>
+
+                    <div class="upload-box">
+
+                        <input type="file"
+                            name="image"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn-submit">
+
+                    Submit Complaint
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

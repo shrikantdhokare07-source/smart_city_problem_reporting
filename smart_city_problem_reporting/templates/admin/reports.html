@@ -1,0 +1,75 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">System Reports</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card bg-primary text-white p-3 text-center">
+<h4>Total Complaints</h4>
+<h2>{{ total }}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-warning text-white p-3 text-center">
+<h4>Pending Complaints</h4>
+<h2>{{ pending }}</h2>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card bg-success text-white p-3 text-center">
+<h4>Resolved Complaints</h4>
+<h2>{{ resolved }}</h2>
+</div>
+</div>
+
+</div>
+
+<hr class="mt-4">
+
+<h4>Complaints by Category</h4>
+
+<table class="table table-bordered">
+
+<tr>
+<th>Category</th>
+<th>Total Complaints</th>
+</tr>
+
+{% for row in category_data %}
+
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+<h4 class="mt-4">Complaints by Department</h4>
+
+<table class="table table-bordered">
+
+<tr>
+<th>Department</th>
+<th>Total Complaints</th>
+</tr>
+
+{% for row in department_data %}
+
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

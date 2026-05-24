@@ -1,0 +1,107 @@
+{% extends "citizen/base_citizen.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">Complaint Details</h2>
+
+<div class="card p-4">
+
+<div class="row">
+
+<div class="col-md-8">
+
+<table class="table">
+
+<tr>
+<th>Complaint ID</th>
+<td>{{ complaint[0] }}</td>
+</tr>
+
+<tr>
+<th>Title</th>
+<td>{{ complaint[1] }}</td>
+</tr>
+
+<tr>
+<th>Description</th>
+<td>{{ complaint[2] }}</td>
+</tr>
+
+<tr>
+<th>Category</th>
+<td>{{ complaint[3] }}</td>
+</tr>
+
+<tr>
+<th>Location</th>
+<td>{{ complaint[4] }}</td>
+</tr>
+
+<tr>
+<th>Status</th>
+<td>
+
+{% if complaint[6] == "Pending" %}
+<span class="badge bg-warning">Pending</span>
+
+{% elif complaint[6] == "In Progress" %}
+<span class="badge bg-info">In Progress</span>
+
+{% elif complaint[6] == "Resolved" %}
+<span class="badge bg-success">Resolved</span>
+
+{% else %}
+<span class="badge bg-secondary">{{ complaint[6] }}</span>
+
+{% endif %}
+
+</td>
+</tr>
+
+<tr>
+<th>Department</th>
+<td>
+{{ complaint[7] if complaint[7] else "Not Assigned" }}
+</td>
+</tr>
+
+<tr>
+<th>Date</th>
+<td>{{ complaint[8] }}</td>
+</tr>
+
+    <tr>
+<th>Status Note</th>
+<td>{{ complaint[9] }}</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="col-md-4">
+
+{% if complaint[5] %}
+
+<img
+src="{{ url_for('static', filename='uploads/' + complaint[5]) }}"
+class="img-fluid rounded">
+
+{% else %}
+
+<p>No image uploaded</p>
+
+{% endif %}
+
+</div>
+
+</div>
+
+</div>
+
+<a href="/complaints" class="btn btn-secondary mt-3">
+Back to My Complaints
+</a>
+
+{% endblock %}

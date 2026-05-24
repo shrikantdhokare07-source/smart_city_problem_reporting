@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart City - Citizen</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+background:#f4f6f9;
+font-family:Arial;
+}
+
+.navbar{
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-link{
+color:white !important;
+margin-right:15px;
+}
+
+.nav-link:hover{
+color:#00d4ff !important;
+}
+
+.footer{
+background:#212529;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+.card{
+border:none;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold">
+<i class="fa-solid fa-city"></i> Smart City
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a href="/dashboard" class="nav-link">
+<i class="fa-solid fa-house"></i> Dashboard
+</a>
+</li>
+
+<li class="nav-item">
+<a href="/report" class="nav-link">
+<i class="fa-solid fa-triangle-exclamation"></i> Report Problem
+</a>
+</li>
+
+<li class="nav-item">
+<a href="/complaints" class="nav-link">
+<i class="fa-solid fa-list"></i> My Complaints
+</a>
+</li>
+
+<li class="nav-item">
+<a href="/profile" class="nav-link">
+<i class="fa-solid fa-user"></i> Profile
+</a>
+</li>
+
+<li class="nav-item">
+<a href="/logout" class="nav-link">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Page Content -->
+
+<div class="container mt-4">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+
+
+<!-- Footer -->
+
+<div class="footer">
+
+<p>Smart City Problem Reporting System © 2026</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
