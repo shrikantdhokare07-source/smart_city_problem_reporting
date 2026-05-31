@@ -1,5 +1,7 @@
 from flask import Flask, render_template,request,redirect,session
 from flask_mysqldb import MySQL
+from werkzeug.utils import secure_filename
+
 import config
 import os
 
