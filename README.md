@@ -20,27 +20,34 @@ This project supports the vision of **Smart Cities** by improving urban problem 
 ---
 
 # 🚀 Key Features
-👤 Citizen Module
-User Registration & Login
-Submit Complaints with Images
-Add Location Information
-View Complaint Status
-Track Complaint History
-Profile Management
-🛠️ Admin Module
-Secure Admin Authentication
-Complaint Management Dashboard
-Assign Complaints to Departments
-Update Resolution Status
-Manage Users
-Generate Reports
-📊 Smart Analytics Features
-Complaint Categorization
-Department-wise Monitoring
-Area-wise Problem Analysis
-Complaint Statistics Dashboard
-Resolution Tracking
-Real-Time Monitoring
+## 👤 Citizen Module
+
+- User Registration & Login
+- Submit Complaints
+- Upload Images
+- Add Location Details
+- Track Complaint Status
+- View Complaint History
+- Profile Management
+
+## 🛠️ Admin Module
+
+- Secure Admin Login
+- Manage Complaints
+- Assign Complaints to Departments
+- Update Complaint Status
+- Manage Users
+- Generate Reports
+- Dashboard Monitoring
+
+## 📊 Smart Intelligence Features
+
+- Problem Categorization
+- Area-wise Issue Analysis
+- Complaint Statistics
+- Resolution Tracking
+- Department Performance Monitoring
+- Real-Time Monitoring Dashboard
 ---
 
 # 🧠 Problem Statement
