@@ -1,6 +1,6 @@
 # 🏙️ Smart City Problem Reporting System
 
-A web-based platform that enables citizens to report city infrastructure issues such as potholes, garbage dumps, water leakage, streetlight failures, and other civic problems. The system helps authorities track, manage, and resolve complaints efficiently, contributing to smarter urban governance.
+**A web-based platform that enables citizens to report city infrastructure issues such as potholes, garbage dumps, water leakage, streetlight failures, and other civic problems. The system helps authorities track, manage, and resolve complaints efficiently, contributing to smarter urban governance.**
 ---
 
 ## 📌 Project Overview
