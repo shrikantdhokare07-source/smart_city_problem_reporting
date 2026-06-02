@@ -1,9 +1,9 @@
-# 🏙️ Smart City Problem Reporting System
+# 🏙️ Smart City Problem Reporting System:
 
 *A web-based platform that enables citizens to report city infrastructure issues such as potholes, garbage dumps, water leakage, streetlight failures, and other civic problems. The system helps authorities track, manage, and resolve complaints efficiently, contributing to smarter urban governance.*
 ---
 
-## 📌 Project Overview
+## 📌 Project Overview:
 
 The **City Scale Smart Problem Intelligence Platform** is a smart city management solution that connects citizens with municipal authorities through a centralized digital system.
 
@@ -19,7 +19,7 @@ The platform allows users to:
 This project supports the vision of **Smart Cities** by improving urban problem management using web technologies and data intelligence.
 ---
 
-# 🚀 Key Features
+# 🚀 Key Features:
 ## 👤 Citizen Module
 
 - User Registration & Login
@@ -50,7 +50,7 @@ This project supports the vision of **Smart Cities** by improving urban problem 
 - Real-Time Monitoring Dashboard
 ---
 
-# 🧠 Problem Statement
+# 🧠 Problem Statement:
 
 City management systems often suffer from:
 
@@ -70,7 +70,7 @@ This platform solves these problems using:
 
 ---
 
-# 🎯 Objectives
+# 🎯 Objectives:
 
 - Develop a smart city complaint management system
 - Improve public service efficiency
@@ -81,7 +81,7 @@ This platform solves these problems using:
 
 ---
 
-# 💻 Technology Stack
+# 💻 Technology Stack:
 
 | Technology | Purpose |
 |------------|---------|
@@ -95,7 +95,7 @@ This platform solves these problems using:
 
 ---
 
-# 📸 Screenshots & Dashboard Preview
+# 📸 Screenshots & Dashboard Preview:
 ## 🏠 Home Page
 
 The landing page provides access to registration, login, and system features.
@@ -144,3 +144,60 @@ Displays detailed complaint information along with uploaded evidence and current
 - Department Assignment
 - Date & Time
 - Uploaded Evidence Image
+  
+---
+
+# 🔄 System Workflow
+
+```text
+Citizen Reports Issue
+        │
+        ▼
+Complaint Submitted
+        │
+        ▼
+Stored in Database
+        │
+        ▼
+Admin Reviews Complaint
+        │
+        ▼
+Assign Department
+        │
+        ▼
+Issue Resolution
+        │
+        ▼
+Status Updated
+        │
+        ▼
+Citizen Receives Update
+```
+---
+# 📂 Project Structure
+
+```text
+smart_city_problem_reporting/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── uploads/
+│
+├── templates/
+│   ├── admin/
+│   └── citizen/
+│
+├── screenshots/
+│   ├── home-page.png
+│   ├── admin-dashboard.png
+│   └── complaint-details.png
+│
+├── app.py
+├── database.sql
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
