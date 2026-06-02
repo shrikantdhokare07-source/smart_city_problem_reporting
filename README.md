@@ -81,6 +81,20 @@ This platform solves these problems using:
 
 ---
 
+# 💻 Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Backend Development |
+| Flask | Web Framework |
+| HTML5 | Frontend Development |
+| CSS3 | Styling |
+| Bootstrap 5 | Responsive Design |
+| JavaScript | Client-Side Functionality |
+| MySQL | Database Management |
+
+---
+
 # 📸 Screenshots & Dashboard Preview
 ## 🏠 Home Page
 
