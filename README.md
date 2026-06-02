@@ -8,15 +8,13 @@ A web-based platform that enables citizens to report city infrastructure issues 
 The City Scale Smart Problem Intelligence Platform is an intelligent web-based Smart City solution that enables citizens to report civic issues and allows municipal authorities to monitor, manage, and resolve complaints efficiently.
 
 The system provides a centralized platform for handling urban issues such as:
-
 🛣️ Road Damage & Potholes
 💧 Water Leakage
 🗑️ Garbage Collection Issues
 🚦 Traffic Problems
 💡 Streetlight Failures
 🏢 Public Infrastructure Complaints
-
-By integrating complaint management, analytics dashboards, and real-time status tracking, the platform improves transparency, accountability, and service efficiency in urban governance.
+By integrating complaint management, analytics dashboards, and real-time status tracking, the platform improves transparency, accountability, and service efficiency in urban governance
 ---
 
 # 🚀 Key Features
