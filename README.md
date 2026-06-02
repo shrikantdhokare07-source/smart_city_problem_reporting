@@ -82,36 +82,51 @@ This platform solves these problems using:
 ---
 
 # 📸 Screenshots & Dashboard Preview
-🏠 Home Page
-<img width="1329" height="635" alt="Screenshot 2026-05-30 203617" src="https://github.com/user-attachments/assets/dad8618b-75c7-4374-bf99-6756359fde9e" />
-The landing page provides a modern interface for citizens/User to access the platform, register, and understand available services.
-Features:
-Citizen Login
-User Registration
-Report City Issues
-Track Complaints
-Department Management Overview
+## 🏠 Home Page
 
+The landing page provides access to registration, login, and system features.
 
-👨‍💼 Admin Dashboard
-<img width="1333" height="628" alt="Screenshot 2026-05-30 211505" src="https://github.com/user-attachments/assets/6608f551-1026-4a25-87fd-70c9fc9fdd8b" />
-The Admin Dashboard provides complete control over complaint management and monitoring.
-Dashboard Highlights:
-Total Complaints
-Pending Complaints
-Resolved Complaints
-Department Statistics
-Quick Action Buttons
-Recent Complaints Table
+<img width="1329" height="635" alt="Screenshot 2026-05-30 203617" src="https://github.com/user-attachments/assets/4c11bf2a-8603-4e74-adf1-4c43cfb5762b" />
 
-📋 Complaint Details Page
-<img width="1167" height="591" alt="Screenshot 2026-05-30 210134" src="https://github.com/user-attachments/assets/b6941743-9202-464f-98c2-5cb3cf0f2efb" />
-Users and administrators can view complete complaint information including uploaded images and status updates.
-Information Available:
-Complaint ID
-Title & Description
-Category
-Location
-Department Assignment
-Status Updates
-Uploaded Evidence Image
+### Features
+- Citizen Login
+- User Registration
+- Complaint Reporting
+- Complaint Tracking
+- Department Management Overview
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+The Admin Dashboard allows administrators to manage complaints and monitor city issues.
+
+<img width="1333" height="628" alt="Screenshot 2026-05-30 211505" src="https://github.com/user-attachments/assets/5ba3250e-9b76-4685-ae5c-2040c3c02ba2" />
+
+### Dashboard Features
+- Total Complaints Counter
+- Pending Complaints Monitoring
+- Resolved Complaints Statistics
+- Department Overview
+- Quick Actions Panel
+- Recent Complaints Table
+
+---
+
+## 📋 Complaint Details Page
+
+Displays detailed complaint information along with uploaded evidence and current status.
+
+<img width="1167" height="591" alt="Screenshot 2026-05-30 210134" src="https://github.com/user-attachments/assets/c676a935-e27a-4369-af91-5b993a62b241" />
+
+### Information Included
+
+- Complaint ID
+- Complaint Title
+- Description
+- Category
+- Location
+- Status
+- Department Assignment
+- Date & Time
+- Uploaded Evidence Image
