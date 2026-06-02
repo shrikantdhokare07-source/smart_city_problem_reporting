@@ -1,66 +1,65 @@
-# 🌆 City Scale Smart Problem Soluntion Platform
+# 🏙️ Smart City Problem Reporting System
 
-An intelligent web-based platform designed to help citizens report, monitor, and analyze city-level problems such as potholes, garbage issues, water leakage, traffic congestion, streetlight failures, and public complaints using smart technologies.
-
+A web-based platform that enables citizens to report city infrastructure issues such as potholes, garbage dumps, water leakage, streetlight failures, and other civic problems. The system helps authorities track, manage, and resolve complaints efficiently, contributing to smarter urban governance.
 ---
 
 ## 📌 Project Overview
 
-The **City Scale Smart Problem Intelligence Platform** is a smart city management solution that connects citizens with municipal authorities through a centralized digital system.
+The City Scale Smart Problem Intelligence Platform is an intelligent web-based Smart City solution that enables citizens to report civic issues and allows municipal authorities to monitor, manage, and resolve complaints efficiently.
 
-The platform allows users to:
+The system provides a centralized platform for handling urban issues such as:
 
-- Report city problems with images and location
-- Track complaint status in real-time
-- Analyze problem data using dashboards
-- Generate reports for city administration
-- Improve communication between citizens and government
+🛣️ Road Damage & Potholes
+💧 Water Leakage
+🗑️ Garbage Collection Issues
+🚦 Traffic Problems
+💡 Streetlight Failures
+🏢 Public Infrastructure Complaints
 
-This project supports the vision of **Smart Cities** by improving urban problem management using web technologies and data intelligence.
-
+By integrating complaint management, analytics dashboards, and real-time status tracking, the platform improves transparency, accountability, and service efficiency in urban governance.
 ---
 
-# 🚀 Features
-
-## 👤 Citizen Module
-- User Registration & Login
-- Submit Complaints
-- Upload Images
-- Add Location Details
-- Track Complaint Status
-- View Complaint History
-
-## 🛠️ Admin Module
-- Secure Admin Login
-- Manage Complaints
-- Assign Tasks
-- Update Complaint Status
-- View Analytics Dashboard
-- Generate Reports
-
-## 📊 Smart Intelligence Features
-- Problem Categorization
-- Area-wise Issue Analysis
-- Priority Detection
-- Complaint Statistics
-- Real-Time Monitoring
-
+# 🚀 Key Features
+👤 Citizen Module
+User Registration & Login
+Submit Complaints with Images
+Add Location Information
+View Complaint Status
+Track Complaint History
+Profile Management
+🛠️ Admin Module
+Secure Admin Authentication
+Complaint Management Dashboard
+Assign Complaints to Departments
+Update Resolution Status
+Manage Users
+Generate Reports
+📊 Smart Analytics Features
+Complaint Categorization
+Department-wise Monitoring
+Area-wise Problem Analysis
+Complaint Statistics Dashboard
+Resolution Tracking
+Real-Time Monitoring
 ---
 
 # 🧠 Problem Statement
 
-City management systems often suffer from:
-- Slow complaint processing
-- Lack of transparency
-- Poor communication
-- Manual record handling
-- No centralized monitoring system
+Traditional city complaint systems often face:
 
-This platform solves these problems using:
-- Digital complaint management
-- Smart analytics
-- Centralized database
-- Real-time tracking
+Slow complaint processing
+Lack of transparency
+Poor communication channels
+Manual record maintenance
+Difficulty in monitoring issue resolution
+
+The City Scale Smart Problem Intelligence Platform addresses these challenges through:
+
+Centralized Digital Complaint Management
+Automated Tracking System
+Smart Analytics Dashboard
+Efficient Department Assignment
+Real-Time Status Updates
 
 ---
 
@@ -75,15 +74,37 @@ This platform solves these problems using:
 
 ---
 
-# 🏗️ System Architecture
+# 📸 Screenshots & Dashboard Preview
+🏠 Home Page
+<img width="1329" height="635" alt="Screenshot 2026-05-30 203617" src="https://github.com/user-attachments/assets/dad8618b-75c7-4374-bf99-6756359fde9e" />
+The landing page provides a modern interface for citizens/User to access the platform, register, and understand available services.
+Features:
+Citizen Login
+User Registration
+Report City Issues
+Track Complaints
+Department Management Overview
 
-```text
-Citizen/User
-     ↓
-Web Application
-     ↓
-Backend Server
-     ↓
-Database
-     ↓
-Admin Dashboard & Analytics
+
+👨‍💼 Admin Dashboard
+<img width="1333" height="628" alt="Screenshot 2026-05-30 211505" src="https://github.com/user-attachments/assets/6608f551-1026-4a25-87fd-70c9fc9fdd8b" />
+The Admin Dashboard provides complete control over complaint management and monitoring.
+Dashboard Highlights:
+Total Complaints
+Pending Complaints
+Resolved Complaints
+Department Statistics
+Quick Action Buttons
+Recent Complaints Table
+
+📋 Complaint Details Page
+<img width="1167" height="591" alt="Screenshot 2026-05-30 210134" src="https://github.com/user-attachments/assets/b6941743-9202-464f-98c2-5cb3cf0f2efb" />
+Users and administrators can view complete complaint information including uploaded images and status updates.
+Information Available:
+Complaint ID
+Title & Description
+Category
+Location
+Department Assignment
+Status Updates
+Uploaded Evidence Image
