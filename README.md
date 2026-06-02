@@ -52,21 +52,21 @@ This project supports the vision of **Smart Cities** by improving urban problem 
 
 # 🧠 Problem Statement
 
-Traditional city complaint systems often face:
+City management systems often suffer from:
 
-Slow complaint processing
-Lack of transparency
-Poor communication channels
-Manual record maintenance
-Difficulty in monitoring issue resolution
+- Slow complaint processing
+- Lack of transparency
+- Poor communication
+- Manual record handling
+- No centralized monitoring system
 
-The City Scale Smart Problem Intelligence Platform addresses these challenges through:
+This platform solves these problems using:
 
-Centralized Digital Complaint Management
-Automated Tracking System
-Smart Analytics Dashboard
-Efficient Department Assignment
-Real-Time Status Updates
+- Digital complaint management
+- Smart analytics
+- Centralized database
+- Real-time tracking
+- Efficient department assignment
 
 ---
 
