@@ -10,11 +10,11 @@ The **City Scale Smart Problem Intelligence Platform** is a smart city managemen
 The platform allows users to:
 
 - 🛣️ Road Damage & Potholes
--💧 Water Leakage
--🗑️ Garbage Collection Issues
--🚦 Traffic Problems
--💡 Streetlight Failures
--🏢 Public Infrastructure Complaints
+- 💧 Water Leakage
+- 🗑️ Garbage Collection Issues
+- 🚦 Traffic Problems
+- 💡 Streetlight Failures
+- 🏢 Public Infrastructure Complaints
 
 This project supports the vision of **Smart Cities** by improving urban problem management using web technologies and data intelligence.
 ---
